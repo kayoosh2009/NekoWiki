@@ -1,0 +1,57 @@
+﻿@page
+@model NekoWiki.Pages.Archive.siameseModel
+@{
+    <style>
+        body {
+            background-image: url('/img/background.png');
+            background-size: 100% auto;
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-position: center top;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content-block::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+
+    <div class="container-flex">
+        <div class="content-block" style="max-width: 900px;
+                                     margin: 20px auto;
+                                     padding: 20px;
+                                     border: 1px solid #ccc;
+                                     overflow: auto;
+                                     background-color: rgba(255, 255, 255, 0.85);
+                                     border-radius: 10px;
+                                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+
+            <img src="~/img/cats/siamese.png" alt="siamese"
+                 style="float: right;
+                            margin-left: 20px;
+                            margin-bottom: 10px;
+                            width: 300px;
+                            height: 300px;
+                            object-fit: cover;
+                            border-radius: 8px;">
+
+            <h1>Siamese Cat</h1>
+            <p>The Siamese cat is one of the oldest and most recognizable cat breeds, distinguished by its slim, elegant body, distinctive color points, and deep blue, almond-shaped eyes. They are highly intelligent, affectionate, and known for being very vocal.</p>
+
+            <h2>Origin:</h2>
+            <p>The Siamese cat originated in Thailand (formerly Siam), where they were considered sacred and were kept by royal families and monks. They were first brought to Europe in the late 19th century and quickly gained popularity due to their unique appearance and charismatic personality.</p>
+
+            <h2>Character and features</h2>
+            <ul>
+                <li>Size: Medium. Characterized by a long, slender, and muscular body (oriental type). Weight typically ranges from 2.5–5 kg.</li>
+                <li>Coat: Short, fine, and lying close to the body. They have "points" of color (darker patches) on the extremities: ears, paws, tail, and muzzle.</li>
+                <li>Temperament: Extremely social, demanding attention, and playful. They form strong bonds with their owners. They are famous for their loud, distinctive, and persistent "meow" (voice).</li>
+                <li>Distinguishing Traits: Striking blue eyes, wedge-shaped head, and color points, which develop due to temperature-sensitive enzymes—the cooler parts of the body develop darker pigment.</li>
+            </ul>
+
+        </div>
+    </div>
+}

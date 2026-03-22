@@ -1,0 +1,146 @@
+﻿@using Microsoft.AspNetCore.Http
+@{
+    var sessionStatus = Context.Session.GetString("status");
+    var sessionUsername = Context.Session.GetString("username");
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - NekoWiki</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/NekoWiki.styles.css" asp-append-version="true" />
+
+
+    <style>
+        /* -------------------------------------------------
+               1️⃣  Общее:  высота окна, убираем фикс‑100%
+               ------------------------------------------------- */
+        html, body {
+            margin: 0; /* убираем отступ браузера */
+            min-height: 100%; /* минимальная высота = высоте окна */
+        }
+
+        /* -------------------------------------------------
+               2️⃣  Flex‑контейнер для body
+               ------------------------------------------------- */
+        body {
+            display: flex;
+            flex-direction: column; /* столбец: header → main → footer */
+        }
+
+        /* -------------------------------------------------
+               3️⃣  Обёртка вокруг основного контента
+               ------------------------------------------------- */
+        .content-wrapper {
+            flex: 1 0 auto; /* занимает всё оставшееся место */
+            display: flex;
+            flex-direction: column;
+        }
+
+            /* -------------------------------------------------
+               4️⃣  Основной <main> внутри .content-wrapper
+               ------------------------------------------------- */
+            .content-wrapper main {
+                flex: 1 0 auto; /* растягиваем главный блок */
+            }
+
+        /* -------------------------------------------------
+               5️⃣  Footer – просто обычный блок в потоке,
+                   но гарантируем, что он не будет сжат.
+               ------------------------------------------------- */
+        footer {
+            flex-shrink: 0; /* не позволяет footer'у сжиматься */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #D2B48C;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/Index">
+                    <img src="~/img/logo.png" alt="NekoWiki Logo" height="30" class="me-2">
+                    NekoWiki
+                </a>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/Index">Home</a></li>
+
+                        <li class="nav-item"><a class="nav-link" 
+                        href="/About">About</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="/Archive">Archive</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle"
+                               href="#"
+                               role="button"
+                               data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                User
+                            </a>
+
+
+                            <ul class="dropdown-menu">
+
+                                @* Показ страниц если пользователь вошел как гость*@
+                                @if (string.IsNullOrEmpty(sessionStatus)){
+                                li><a class="dropdown-item" href="/Login">Login</a></li>
+                                <li><a class="dropdown-item" href="/Register">Register</a></li>
+                                }
+                                else{
+                                @* тут должны быть все остальные страницы но я в бургер меню и я хз что делать *@
+                                
+                                    @if ( sessionStatus == "Admin"){
+                                    @* Тут должны быть страницы для админа *@
+                                    }
+                                }
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - NekoWiki - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

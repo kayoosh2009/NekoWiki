@@ -1,0 +1,53 @@
+﻿@page
+@model NekoWiki.Pages.HomeModel
+@{
+    <style>
+        body {
+            background-image: url('/img/background.png');
+            background-size: 100% auto;
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-position: center top;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+    <div class="container-flex">
+        <div style="max-width: 900px;
+                                margin: 20px auto;
+                                padding: 20px;
+                                border: 1px solid #ccc;
+                                overflow: auto;
+                                background-color: rgba(255, 255, 255, 0.85);
+                                border-radius: 10px;
+                                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+
+            <img src="~/img/cat1.jpg" alt="Main_Meow"
+                 style="float: right;
+                    margin-left: 20px;
+                    margin-bottom: 10px;
+                    width: 250px;
+                    height: 250px;
+                    object-fit: cover;
+                    border-radius: 8px;">
+
+            <h1>What is NekoWiki? </h1>
+            <p>Welcome nya, I'm quite sure you are familiar with Wikipedia.</p>
+            <p>Well, NekoWiki is the same Wikipedia, but for cats and kittens. On this site, you can view photos of cats, read about various cat breeds, play cute games, and learn a lot of interesting information about cats.</p>
+            <p>And here is an interesting fact about cats: although the sound of a cat sounds like "meow" all over the world, only in Japan are children 100% sure that a cat says "nya." That's the cycle of cat sounds.</p>
+
+            <div style="clear: both;"></div>
+
+            <div class="mt-4 text-center">
+                <a class="btn btn-primary btn-lg me-3" href="/Login">
+                    <i class="bi bi-box-arrow-in-right"></i> Login
+                </a>
+                <a class="btn btn-success btn-lg" href="/Register">
+                    <i class="bi bi-person-plus-fill"></i> Register
+                </a>
+            </div>
+
+        </div>
+    </div>
+}

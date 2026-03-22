@@ -1,0 +1,190 @@
+﻿@page
+@model NekoWiki.Pages.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="neko-login-container">
+    <div class="neko-card">
+        <div class="neko-header">
+            <h2 class="neko-title">NekoWiki Login 🐾</h2>
+            <p class="neko-subtitle">Welcome back, nya!</p>
+        </div>
+
+        <form id="loginForm" novalidate>
+            <div class="form-group">
+                <label class="form-label" for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="meow@example.com">
+                <div id="emailError" class="error-message"></div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="password">Password</label>
+                <div class="input-wrapper">
+                    <input type="password" class="form-control" id="password" placeholder="••••••••">
+                    <span id="togglePass" class="password-toggle"></span>
+                </div>
+                <div id="passwordError" class="error-message"></div>
+            </div>
+
+            <button type="submit" class="btn-main" id="submitBtn">Login</button>
+
+            <div class="secondary-actions">
+                <button type="button" id="resetBtn" class="btn-sub">Reset</button>
+                <button type="button" id="forgotBtn" class="btn-sub">Forgot?</button>
+            </div>
+        </form>
+
+        <div class="footer-link">
+            <span>Don't have an account?</span>
+            <a href="/Register">Sign up</a>
+        </div>
+    </div>
+</div>
+
+<style>
+
+    body {
+        background-image: url('https://i.pinimg.com/736x/a0/68/e6/a068e6afda70e3a73e1fa34cb3463029.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+    /* Центрируем контейнер относительно контента страницы */
+    .neko-login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh; /* Чтобы не улетало слишком далеко от меню */
+        padding: 20px;
+    }
+
+    .neko-card {
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 40px;
+        border-radius: 24px;
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .neko-header {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .neko-title {
+        color: #5d5750;
+        font-weight: 800;
+        margin: 0;
+    }
+
+    .neko-subtitle {
+        color: #8a8279;
+        font-size: 0.9rem;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-label {
+        display: block;
+        font-weight: 600;
+        color: #5d5750;
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+    }
+
+    .input-wrapper {
+        position: relative;
+    }
+
+    .form-control {
+        width: 100%;
+        height: 48px;
+        border-radius: 12px;
+        border: 2px solid #e4dcd1;
+        padding: 0 15px;
+        box-sizing: border-box;
+        transition: all 0.2s;
+    }
+
+        .form-control:focus {
+            border-color: #c9bea6;
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(228, 220, 209, 0.4);
+        }
+
+    .password-toggle {
+        position: absolute;
+        right: 15px;
+        top: 14px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        background-image: url('https://img.icons8.com/?size=100&id=60022&format=png&color=000000');
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+        display: none;
+    }
+
+        .password-toggle.is-visible {
+            background-image: url('https://img.icons8.com/?size=100&id=59825&format=png&color=000000');
+        }
+
+    .error-message {
+        color: #e63946;
+        font-size: 0.8rem;
+        margin-top: 5px;
+        min-height: 18px;
+    }
+
+    .btn-main {
+        width: 100%;
+        height: 48px;
+        background-color: #5d5750;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        font-weight: 700;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .secondary-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .btn-sub {
+        height: 40px;
+        background: #fdfcfb;
+        border: 2px solid #e4dcd1;
+        border-radius: 10px;
+        color: #8a8279;
+        cursor: pointer;
+    }
+
+    .footer-link {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
+
+        .footer-link a {
+            color: #5d5750;
+            font-weight: 700;
+            text-decoration: none;
+        }
+</style>
+
+<script src="~/js/login.js"></script>

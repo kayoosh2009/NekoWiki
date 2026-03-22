@@ -1,0 +1,57 @@
+﻿@page
+@model NekoWiki.Pages.Archive.bengalModel
+@{
+    <style>
+        body {
+            background-image: url('/img/background.png');
+            background-size: 100% auto;
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-position: center top;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content-block::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+
+    <div class="container-flex">
+        <div class="content-block" style="max-width: 900px;
+                                     margin: 20px auto;
+                                     padding: 20px;
+                                     border: 1px solid #ccc;
+                                     overflow: auto;
+                                     background-color: rgba(255, 255, 255, 0.85);
+                                     border-radius: 10px;
+                                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+
+            <img src="~/img/cats/bengal.png" alt="bengal"
+                 style="float: right;
+                            margin-left: 20px;
+                            margin-bottom: 10px;
+                            width: 300px;
+                            height: 300px;
+                            object-fit: cover;
+                            border-radius: 8px;">
+
+            <h1>Bengal Cat</h1>
+            <p>The Bengal is a hybrid cat breed created from a cross between an Asian Leopard Cat and a domestic cat. They are highly energetic, athletic, and known for their distinctive, wild-looking coat patterns (spotted or marbled).</p>
+
+            <h2>Origin:</h2>
+            <p>The breed was developed in the United States in the 1970s and 80s by combining the strength and exotic patterns of the Asian Leopard Cat (ALC) with the docile temperament of domestic cats. Bengals must be several generations (typically F4 or later) removed from the ALC to be kept as pets.</p>
+
+            <h2>Character and features</h2>
+            <ul>
+                <li>Size: Medium to large, with a long, muscular, and athletic body. Weight is usually 4–7 kg.</li>
+                <li>Coat: Short, dense, and exceptionally soft ("pelage"). The coat is noted for its high contrast spots, rosettes, or marbled patterns, often with a unique "glitter" effect.</li>
+                <li>Temperament: Highly intelligent, curious, and active. They require significant mental and physical stimulation. They are known to enjoy playing in water, climbing, and performing tricks.</li>
+                <li>Distinguishing Traits: Their striking "wild" look, highly patterned coat, and boundless energy. They are often vocal and have a demanding personality.</li>
+            </ul>
+
+        </div>
+    </div>
+}

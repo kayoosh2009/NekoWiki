@@ -1,0 +1,56 @@
+﻿@page
+@model NekoWiki.Pages.Archive.main_kunModel
+@{
+    <style>
+        body {
+            background-image: url('/img/background.png');
+            background-size: 100% auto;
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-position: center top;
+            margin: 0;
+            padding: 0;
+        }
+        .content-block::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+
+    <div class="container-flex">
+        <div class="content-block" style="max-width: 900px;
+                        margin: 20px auto;
+                        padding: 20px;
+                        border: 1px solid #ccc;
+                        overflow: auto; 
+                        background-color: rgba(255, 255, 255, 0.85);
+                        border-radius: 10px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+
+            <img src="~/img/cats/maine_coon.png" alt="maine_coon"
+                 style="float: right;
+                        margin-left: 20px;
+                        margin-bottom: 10px;
+                        width: 300px;
+                        height: 300px;
+                        object-fit: cover;
+                        border-radius: 8px;">
+
+            <h1>Maine Coon</h1>
+            <p>The Maine Coon is one of the largest breeds of domestic cat, known for its majestic appearance, long, fluffy fur, and friendly nature. These cats are often referred to as "gentle giants" due to their impressive size and affectionate nature.</p>
+
+            <h2>Origin:</h2>
+            <p>The breed originates from Maine, USA, where they developed as working cats capable of surviving harsh winter conditions. Maine Coons are believed to be the result of crossing local shorthaired cats with longhaired breeds brought by sailors (possibly Angora or Norwegian Forest cats).</p>
+
+            <h2>Character and features</h2>
+            <ul>
+                <li>Size: Males can weigh up to 8-10 kg and reach a length of up to 1 meter from nose to tip of tail.</li>
+                <li>Coat: Dense, water-repellent, with a long collar and fluffy tail.</li>
+                <li>Temperament: Very intelligent, playful, and affectionate. They get along well with children and other animals. They are known for being "talkative," producing a variety of trills and purrs, but not a loud "meow".</li>
+                <li>Distinguishing Traits: They often enjoy water and may play in it. They have distinctive ear tufts that resemble a lynx's..</li>
+            </ul>
+
+        </div>
+    </div>
+}

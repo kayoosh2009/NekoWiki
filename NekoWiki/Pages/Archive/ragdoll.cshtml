@@ -1,0 +1,57 @@
+﻿@page
+@model NekoWiki.Pages.Archive.ragdollModel
+@{
+    <style>
+        body {
+            background-image: url('/img/background.png');
+            background-size: 100% auto;
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-position: center top;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content-block::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+
+    <div class="container-flex">
+        <div class="content-block" style="max-width: 900px;
+                                     margin: 20px auto;
+                                     padding: 20px;
+                                     border: 1px solid #ccc;
+                                     overflow: auto;
+                                     background-color: rgba(255, 255, 255, 0.85);
+                                     border-radius: 10px;
+                                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+
+            <img src="~/img/cats/ragdoll.png" alt="ragdoll"
+                 style="float: right;
+                            margin-left: 20px;
+                            margin-bottom: 10px;
+                            width: 300px;
+                            height: 300px;
+                            object-fit: cover;
+                            border-radius: 8px;">
+
+            <h1>Ragdoll Cat</h1>
+            <p>The Ragdoll is a large, semi-longhaired cat breed famous for its striking blue eyes and tendency to completely relax and go limp like a rag doll when held (hence the name). They are known for their gentle, dog-like temperament.</p>
+
+            <h2>Origin:</h2>
+            <p>The breed originated in the 1960s in California, USA, developed by breeder Ann Baker. The breed's foundation stock included a white, longhaired female named Josephine. Ragdolls are highly valued for their sweet disposition and plush appearance.</p>
+
+            <h2>Character and features</h2>
+            <ul>
+                <li>Size: Large, muscular, and heavy-boned. They mature slowly, often reaching full size around four years of age. Males can weigh between 6–9 kg.</li>
+                <li>Coat: Semi-long, silky, and dense, without a thick undercoat, which means less matting than some other longhaired breeds. They have color points similar to the Siamese.</li>
+                <li>Temperament: Extremely affectionate, docile, and placid. They are highly social, playful, and often follow their owners around the house. They are non-aggressive and excellent with children.</li>
+                <li>Distinguishing Traits: Bright, deep blue eyes; a soft, rabbit-like coat; and the unique ability to relax completely when picked up.</li>
+            </ul>
+
+        </div>
+    </div>
+}
