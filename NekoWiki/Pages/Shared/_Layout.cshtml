@@ -99,20 +99,29 @@
                                 User
                             </a>
 
-
                             <ul class="dropdown-menu">
-
-                                @* Показ страниц если пользователь вошел как гость*@
-                                @if (string.IsNullOrEmpty(sessionStatus)){
-                                li><a class="dropdown-item" href="/Login">Login</a></li>
-                                <li><a class="dropdown-item" href="/Register">Register</a></li>
+                                @if (string.IsNullOrEmpty(sessionStatus)) 
+                                {
+                                    @* 1. Если пользователь НЕ вошел (Гость) *@
+                                    <li><a class="dropdown-item" href="/Login">Login</a></li>
+                                    <li><a class="dropdown-item" href="/Register">Register</a></li>
                                 }
-                                else{
-                                @* тут должны быть все остальные страницы но я в бургер меню и я хз что делать *@
-                                
-                                    @if ( sessionStatus == "Admin"){
-                                    @* Тут должны быть страницы для админа *@
+                                else 
+                                {
+                                    @* 2. Если пользователь ВОШЕЛ (любой статус) *@
+                                    <li><a class="dropdown-item" href="/Profile">My Profile (@sessionUsername)</a></li>
+                                    <li><a class="dropdown-item" href="/Settings">Settings</a></li>
+
+                                    @* 3. Если этот вошедший — еще и Админ *@
+                                    if (sessionStatus == "Admin") 
+                                    {
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><h6 class="dropdown-header">Admin Area</h6></li>
+                                        <li><a class="dropdown-item text-danger" href="/AdminPanel">Admin Dashboard</a></li>
                                     }
+
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="/Logout">Logout</a></li>
                                 }
                             </ul>
                         </li>

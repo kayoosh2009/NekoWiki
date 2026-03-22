@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "gbCIBeN6sIY=",
+  "dgSpecHash": "iT+6+aDvz6A=",
   "success": true,
-  "projectFilePath": "D:\\User\\Desktop\\Code\\NekoWiki\\NekoWiki\\NekoWiki.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/workspaces/NekoWiki/NekoWiki/NekoWiki.csproj",
+  "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.ref/9.0.11/microsoft.netcore.app.ref.9.0.11.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.11/microsoft.aspnetcore.app.ref.9.0.11.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.host.linux-x64/9.0.11/microsoft.netcore.app.host.linux-x64.9.0.11.nupkg.sha512"
+  ],
   "logs": []
 }

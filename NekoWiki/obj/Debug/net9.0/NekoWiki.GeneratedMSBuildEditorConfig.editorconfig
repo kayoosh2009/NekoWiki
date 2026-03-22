@@ -1,0 +1,91 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = NekoWiki
+build_property.RootNamespace = NekoWiki
+build_property.ProjectDir = /workspaces/NekoWiki/NekoWiki/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /workspaces/NekoWiki/NekoWiki
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[/workspaces/NekoWiki/NekoWiki/Pages/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/NekoWiki/NekoWiki/Pages/Archive.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXJjaGl2ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/NekoWiki/NekoWiki/Pages/Archive/bengal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXJjaGl2ZS9iZW5nYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/NekoWiki/NekoWiki/Pages/Archive/british_shorthair.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXJjaGl2ZS9icml0aXNoX3Nob3J0aGFpci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/NekoWiki/NekoWiki/Pages/Archive/main_kun.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXJjaGl2ZS9tYWluX2t1bi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/NekoWiki/NekoWiki/Pages/Archive/persian.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXJjaGl2ZS9wZXJzaWFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/NekoWiki/NekoWiki/Pages/Archive/ragdoll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXJjaGl2ZS9yYWdkb2xsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/NekoWiki/NekoWiki/Pages/Archive/siamese.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXJjaGl2ZS9zaWFtZXNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/NekoWiki/NekoWiki/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/NekoWiki/NekoWiki/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/NekoWiki/NekoWiki/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/NekoWiki/NekoWiki/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/NekoWiki/NekoWiki/Pages/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/NekoWiki/NekoWiki/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/NekoWiki/NekoWiki/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/NekoWiki/NekoWiki/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/NekoWiki/NekoWiki/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-3yy2cvj22m
