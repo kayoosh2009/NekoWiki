@@ -1,53 +1,94 @@
 ﻿@page
 @model NekoWiki.Pages.HomeModel
 @{
-    <style>
-        body {
-            background-image: url('/img/background.png');
-            background-size: 100% auto;
-            background-repeat: repeat;
-            background-attachment: fixed;
-            background-position: center top;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+    var hour = DateTime.Now.Hour;
+    string greeting = hour switch
+    {
+        >= 5 and < 12 => "Good Morning",
+        >= 12 and < 18 => "Good Day",
+        >= 18 and < 24 => "Good Evening",
+        _ => "Good Night"
+    };
 
-    <div class="container-flex">
-        <div style="max-width: 900px;
-                                margin: 20px auto;
-                                padding: 20px;
-                                border: 1px solid #ccc;
-                                overflow: auto;
-                                background-color: rgba(255, 255, 255, 0.85);
-                                border-radius: 10px;
-                                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    var username = HttpContext.Session.GetString("username");
+    var status = HttpContext.Session.GetString("status");
 
-            <img src="~/img/cat1.jpg" alt="Main_Meow"
-                 style="float: right;
-                    margin-left: 20px;
-                    margin-bottom: 10px;
-                    width: 250px;
-                    height: 250px;
-                    object-fit: cover;
-                    border-radius: 8px;">
+    string[] catFacts = {
+        "Cats have 32 muscles in each ear, allowing them to rotate them 180 degrees.",
+        "Cats can make about 100 different sounds, while dogs only make about 10.",
+        "Each cat's nose print is unique, just like human fingerprints.",
+        "Cats sleep an average of 12-16 hours a day, spending 70% of their lives asleep.",
+        "Ancient Egyptians shaved their eyebrows as a sign of mourning when their cat died.",
+        "Cats cannot taste sweetness due to a lack of specific receptors.",
+        "The oldest cat in the world lived for 38 years and 3 days.",
+        "Cats can jump up to 6 times their own height.",
+        "Cats have a 'third eyelid' — a nictitating membrane for eye protection.",
+        "Cats walk by moving both right legs first, then both left legs; only camels and giraffes walk this way too."
+    };
 
-            <h1>What is NekoWiki? </h1>
-            <p>Welcome nya, I'm quite sure you are familiar with Wikipedia.</p>
-            <p>Well, NekoWiki is the same Wikipedia, but for cats and kittens. On this site, you can view photos of cats, read about various cat breeds, play cute games, and learn a lot of interesting information about cats.</p>
-            <p>And here is an interesting fact about cats: although the sound of a cat sounds like "meow" all over the world, only in Japan are children 100% sure that a cat says "nya." That's the cycle of cat sounds.</p>
 
-            <div style="clear: both;"></div>
-
-            <div class="mt-4 text-center">
-                <a class="btn btn-primary btn-lg me-3" href="/Login">
-                    <i class="bi bi-box-arrow-in-right"></i> Login
-                </a>
-                <a class="btn btn-success btn-lg" href="/Register">
-                    <i class="bi bi-person-plus-fill"></i> Register
-                </a>
-            </div>
-
-        </div>
-    </div>
+    var random = new Random();
+    var currentFact = catFacts[random.Next(catFacts.Length)];
 }
+
+<style>
+    body {
+        background-image: url('/img/background.png');
+        background-size: 100% auto;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-position: center top;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<div style="max-width: 850px; margin: 20px auto; padding: 20px; background-color: rgba(255, 255, 255, 0.85); border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); text-align: center;">
+    <h1 style="color: #333; margin: 0;">
+        <i class="bi bi-clock"></i> @greeting, @(string.IsNullOrEmpty(username) ? "Meow" : username)! 🐾
+    </h1>
+</div>
+
+<div style="max-width: 850px; margin: 20px auto; padding: 25px; background-color: rgba(255, 255, 255, 0.85); border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); overflow: auto;">
+    
+    <img src="~/img/cat1.jpg" alt="Main_Meow" 
+         style="float: right; margin-left: 20px; margin-bottom: 10px; width: 200px; height: 200px; object-fit: cover; border-radius: 15px;">
+
+    <h2 style="margin-top: 0;">What is NekoWiki?</h2>
+    <p>You're likely familiar with Wikipedia. Well, NekoWiki is the same thing, but for cats and kittens. </p>
+    <p>On this site, you can browse cat photos, read about breeds, and discover plenty of cool facts. </p>
+    <p style="font-style: italic; color: #555;">
+        By the way, only in Japan are kids 100% sure that a cat says "nya" instead of "meow". 🇯🇵
+    </p>
+    
+    <div style="clear: both;"></div>
+</div>
+
+<div style="max-width: 850px; margin: 20px auto; padding: 20px; background-color: rgba(255, 235, 235, 0.9); border-radius: 15px; border: 1px solid #ffb3b3; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center;">
+    <h3 style="color: #d63384; margin-top: 0;">
+        <i class="bi bi-lightbulb"></i> Random meow-fact:
+    </h3>
+    <p style="font-size: 1.1rem; color: #444; line-height: 1.5; margin-bottom: 0;">
+        "@currentFact"
+    </p>
+</div>
+
+<div style="max-width: 850px; margin: 20px auto; padding: 20px; background-color: rgba(255, 255, 255, 0.85); border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); margin-bottom: 50px;">
+    <h3 style="text-align: center; margin-bottom: 20px;">🐾 Мяу-галерея</h3>
+    
+    <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+        @for (int i = 1; i <= 15; i++)
+        {
+            <div style="flex: 0 1 calc(25% - 15px); min-width: 150px; aspect-ratio: 1/1; overflow: hidden; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background: white;">
+                <img src="~/img/main/@(i).png" alt="Cat @i" 
+                     style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease; cursor: pointer;"
+                     onmouseover="this.style.transform='scale(1.1)'" 
+                     onmouseout="this.style.transform='scale(1)'">
+            </div>
+        }
+    </div>
+</div>
+
+<div style="height: 60px;"></div>
+
+</div>

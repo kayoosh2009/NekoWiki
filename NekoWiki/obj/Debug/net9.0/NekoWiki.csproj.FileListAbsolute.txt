@@ -22,7 +22,6 @@
 /workspaces/NekoWiki/NekoWiki/obj/Debug/net9.0/scopedcss/Pages/Shared/_Layout.cshtml.rz.scp.css
 /workspaces/NekoWiki/NekoWiki/obj/Debug/net9.0/scopedcss/bundle/NekoWiki.styles.css
 /workspaces/NekoWiki/NekoWiki/obj/Debug/net9.0/scopedcss/projectbundle/NekoWiki.bundle.scp.css
-/workspaces/NekoWiki/NekoWiki/obj/Debug/net9.0/compressed/q6oird4hyt-{0}-8lrf8o5t48-8lrf8o5t48.gz
 /workspaces/NekoWiki/NekoWiki/obj/Debug/net9.0/compressed/369ofg2kbu-{0}-61n19gt1b8-61n19gt1b8.gz
 /workspaces/NekoWiki/NekoWiki/obj/Debug/net9.0/compressed/14nrl42qct-{0}-l5nfqxroxl-l5nfqxroxl.gz
 /workspaces/NekoWiki/NekoWiki/obj/Debug/net9.0/compressed/g3g43obqvv-{0}-6klhy316j7-6klhy316j7.gz
@@ -82,3 +81,4 @@
 /workspaces/NekoWiki/NekoWiki/obj/Debug/net9.0/NekoWiki.pdb
 /workspaces/NekoWiki/NekoWiki/obj/Debug/net9.0/NekoWiki.genruntimeconfig.cache
 /workspaces/NekoWiki/NekoWiki/obj/Debug/net9.0/ref/NekoWiki.dll
+/workspaces/NekoWiki/NekoWiki/obj/Debug/net9.0/compressed/q6oird4hyt-{0}-a3fv7idfqj-a3fv7idfqj.gz

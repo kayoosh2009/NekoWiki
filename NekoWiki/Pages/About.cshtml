@@ -1,15 +1,78 @@
 ﻿@page
 @model NekoWiki.Pages.AboutModel
 @{
-    <style>
-        body {
-            background-image: url('/img/background.png');
-            background-size: 100% auto;
-            background-repeat: repeat;
-            background-attachment: fixed;
-            background-position: center top;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+    ViewData["Title"] = "About Me";
 }
+<style>
+    body {
+        background-image: url('/img/background.png');
+        background-size: 100% auto;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-position: center top;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-sm border-0" style="background-color: rgba(255, 255, 255, 0.9);">
+                <img src="~/img/creator.png" class="card-img-top" alt="Kai">
+                <div class="card-body text-center">
+                    <h3 class="card-title">Kai | @@kayoosh_x</h3>
+                    <p class="text-muted">Software Developer & Student</p>
+                    <p class="card-text">
+                        I develop in C# and Python, building cool stuff like MewAI and NekoWiki.
+                        I believe genetics is code too! 🧬
+                    </p>
+                    <hr>
+
+                    <div class="d-flex justify-content-center flex-wrap gap-2">
+                        <a href="https://github.com/kayoosh2009" class="btn btn-outline-dark btn-sm d-flex align-items-center gap-2">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+
+                        <a href="https://t.me/kayoosh_channel" class="btn btn-primary btn-sm d-flex align-items-center gap-2" style="background-color: #24A1DE; border-color: #24A1DE;">
+                            <i class="bi bi-telegram"></i> Telegram
+                        </a>
+
+                        <a href="https://www.twitch.tv/kayoosh_x" class="btn btn-primary btn-sm d-flex align-items-center gap-2" style="background-color: #6441a5; border-color: #6441a5;">
+                            <i class="bi bi-twitch"></i> Twitch
+                        </a>
+
+                        <a href="https://youtube.com/@@kayoosh_nya" class="btn btn-danger btn-sm d-flex align-items-center gap-2">
+                            <i class="bi bi-youtube"></i> YouTube
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/sviatoslav-burnashov" class="btn btn-primary btn-sm d-flex align-items-center gap-2" style="background-color: #0077b5; border-color: #0077b5;">
+                            <i class="bi bi-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-10 col-lg-8">
+            <div class="card shadow-sm border-0" style="background-color: rgba(255, 255, 255, 0.9);">
+                <div class="card-header bg-dark text-white text-center">
+                    <h5 class="mb-0">Live Stream</h5>
+                </div>
+                <div class="card-body p-0">
+                    <div class="ratio ratio-16x9 shadow-sm rounded overflow-hidden">
+                        <iframe
+                            src="https://player.twitch.tv/?channel=kayoosh_x&parent=localhost&autoplay=false&muted=false"
+                            height="100%"
+                            width="100%"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <small class="text-muted">Hop on the stream, let's chat! 🎙️</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
