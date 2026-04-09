@@ -1,7 +1,14 @@
 ﻿@using Microsoft.AspNetCore.Http
 @{
     var sessionStatus = Context.Session.GetString("status");
-    var sessionUsername = Context.Session.GetString("username");
+    var sessionUsername = Context.Session.GetString("username") ?? "Guest"; // Пункт 5.1 [cite: 163]
+
+    var hour = DateTime.Now.Hour;
+    string timeGreeting = hour switch {
+        >= 5 and < 12 => "Good Morning",
+        >= 12 and < 18 => "Good Afternoon",
+        _ => "Good Evening" // Пункт 5.2 [cite: 164]
+    };
 }
 
 
@@ -63,7 +70,6 @@
 </head>
 
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #D2B48C;">
             <div class="container-fluid">
@@ -71,54 +77,41 @@
                     <img src="~/img/logo.png" alt="NekoWiki Logo" height="30" class="me-2">
                     NekoWiki
                 </a>
-                <button class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/Index">Home</a></li>
-
-                        <li class="nav-item"><a class="nav-link" 
-                        href="/About">About</a></li>
-
+                        <li class="nav-item"><a class="nav-link active" href="/Index">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/About">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="/Archive">Archive</a></li>
+                    </ul>
 
+                    <ul class="navbar-nav ms-auto"> 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle"
-                               href="#"
-                               role="button"
-                               data-bs-toggle="dropdown"
-                               aria-expanded="false">
-                                User
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                @timeGreeting, @sessionUsername 🐾
                             </a>
 
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-end">
                                 @if (string.IsNullOrEmpty(sessionStatus)) 
                                 {
-                                    @* 1. Если пользователь НЕ вошел (Гость) *@
                                     <li><a class="dropdown-item" href="/Login">Login</a></li>
                                     <li><a class="dropdown-item" href="/Register">Register</a></li>
                                 }
                                 else 
                                 {
-                                    @* 2. Если пользователь ВОШЕЛ (любой статус) *@
-                                    <li><a class="dropdown-item" href="/Profile">My Profile (@sessionUsername)</a></li>
+                                    <li><a class="dropdown-item" href="/Profile">My Profile</a></li>
                                     <li><a class="dropdown-item" href="/Settings">Settings</a></li>
 
-                                    @* 3. Если этот вошедший — еще и Админ *@
                                     if (sessionStatus == "Admin") 
                                     {
                                         <li><hr class="dropdown-divider"></li>
                                         <li><h6 class="dropdown-header">Admin Area</h6></li>
-                                        <li><a class="dropdown-item text-danger" href="/AdminPanel">Admin Dashboard</a></li>
+                                        <li><a class="dropdown-item" href="/AdminPanel">User Management</a></li>
+                                        <li><a class="dropdown-item" href="/AdminStats">Site Statistics</a></li>
                                     }
 
                                     <li><hr class="dropdown-divider"></li>
@@ -126,7 +119,6 @@
                                 }
                             </ul>
                         </li>
-
                     </ul>
                 </div>
             </div>

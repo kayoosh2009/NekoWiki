@@ -7,12 +7,12 @@ namespace NekoWiki.Pages
     public class LoginModel : PageModel
     {
         [BindProperty]
-        public string Username { get; set; }
+        public string? Username { get; set; }
 
         [BindProperty]
-        public string Password { get; set; }
+        public string? Password { get; set; }
 
-        public string Message { get; set; }
+        public string? Message { get; set; }
 
         public void OnGet()
         {
@@ -21,21 +21,22 @@ namespace NekoWiki.Pages
 
         public IActionResult OnPost()
         {
-            [cite_start]// Проверка учетных записей согласно спецификации [cite: 19, 20]
-
-            [cite_start]if (Username == "admin" && Password == "admin123") // Админ [cite: 21]
+            // Проверка учетных записей согласно спецификации
+            // 3.1.1 Администратор
+            if (Username == "admin" && Password == "admin123")
             {
                 HttpContext.Session.SetString("username", "admin");
                 HttpContext.Session.SetString("status", "Admin");
                 return RedirectToPage("/Index");
             }
-            [cite_start]else if (Username == "user1" && Password == "pass1") // Пользователь 1 [cite: 22]
+            // 3.1.2 Зарегистрированные пользователи
+            else if (Username == "user1" && Password == "pass1")
             {
                 HttpContext.Session.SetString("username", "user1");
                 HttpContext.Session.SetString("status", "Registered");
                 return RedirectToPage("/Index");
             }
-            [cite_start]else if (Username == "user2" && Password == "pass2") // Пользователь 2 [cite: 22]
+            else if (Username == "user2" && Password == "pass2")
             {
                 HttpContext.Session.SetString("username", "user2");
                 HttpContext.Session.SetString("status", "Registered");

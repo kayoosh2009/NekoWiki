@@ -1,0 +1,44 @@
+@page
+@model NekoWiki.Pages.AdminStatsModel
+@{
+    ViewData["Title"] = "Site Statistics";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm border-0" style="border-radius: 15px;">
+        <div class="card-header bg-dark text-white" style="border-radius: 15px 15px 0 0;">
+            <h3 class="mb-0">📊 Статистика сайта (Пункт 4.4)</h3>
+        </div>
+        <div class="card-body">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 bg-primary text-white rounded-3 shadow-sm">
+                        <h5>Всего визитов</h5>
+                        <p class="display-4">@Model.TotalVisits</p>
+                        <small>Гости + Регистрации</small>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="p-4 bg-success text-white rounded-3 shadow-sm">
+                        <h5>Зарегистрированные</h5>
+                        <p class="display-4">@Model.RegisteredVisits</p>
+                        <small>Включая админов</small>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="p-4 bg-warning text-dark rounded-3 shadow-sm">
+                        <h5>Сейчас на сайте</h5>
+                        <p class="display-4">@Model.OnlineNow</p>
+                        <small>Активные сессии</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5 p-3 border-start border-4 border-info bg-light">
+                <p class="mb-0"><strong>Примечание:</strong> Данные в этом разделе обновляются в реальном времени при каждом входе пользователя (Пункт 4.4.3).</p>
+            </div>
+        </div>
+    </div>
+</div>
