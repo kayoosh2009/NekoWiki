@@ -26,8 +26,8 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWJvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/workspaces/NekoWiki/NekoWiki/Pages/AdminPanel.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRtaW5QYW5lbC5jc2h0bWw=
+[/workspaces/NekoWiki/NekoWiki/Pages/AdminStats.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRtaW5TdGF0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/workspaces/NekoWiki/NekoWiki/Pages/Archive.cshtml]

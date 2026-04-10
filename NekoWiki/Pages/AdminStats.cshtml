@@ -1,0 +1,57 @@
+@page
+@model NekoWiki.Pages.AdminStatsModel
+@{
+    ViewData["Title"] = "Site Statistics";
+}
+
+<style>
+    body {
+        background-image: url('/img/background.png');
+        background-size: 100% auto;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-position: center top;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<div style="max-width: 850px; margin: 20px auto; padding: 20px; background-color: rgba(255, 255, 255, 0.85); border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+    <div style="text-align: center; margin-bottom: 30px;">
+        <h1 style="color: #333; margin: 0;">
+            <i class="bi bi-graph-up"></i> Site Analytics 📊
+        </h1>
+        <p style="color: #666;">Usage metrics and traffic monitoring</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+        
+        <div style="background: white; padding: 25px; border-radius: 15px; text-align: center; border: 1px solid #eee; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <i class="bi bi-people" style="font-size: 2rem; color: #D2B48C;"></i>
+            <h4 style="margin: 10px 0; font-size: 1rem; color: #555;">Total Visits</h4>
+            <div style="font-size: 2.5rem; font-weight: bold; color: #333;">@Model.TotalVisits</div>
+            <small style="color: #999;">Guests + Users</small>
+        </div>
+
+        <div style="background: white; padding: 25px; border-radius: 15px; text-align: center; border: 1px solid #eee; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <i class="bi bi-person-check" style="font-size: 2rem; color: #28a745;"></i>
+            <h4 style="margin: 10px 0; font-size: 1rem; color: #555;">User Logins</h4>
+            <div style="font-size: 2.5rem; font-weight: bold; color: #333;">@Model.UserLogins</div>
+            <small style="color: #999;">Registered only</small>
+        </div>
+
+        <div style="background: white; padding: 25px; border-radius: 15px; text-align: center; border: 1px solid #eee; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <i class="bi bi-broadcast" style="font-size: 2rem; color: #ffc107;"></i>
+            <h4 style="margin: 10px 0; font-size: 1rem; color: #555;">Online Now</h4>
+            <div style="font-size: 2.5rem; font-weight: bold; color: #333;">@Model.OnlineNow</div>
+            <small style="color: #999;">Active sessions</small>
+        </div>
+
+    </div>
+
+    <div style="margin-top: 30px; padding: 15px; background-color: rgba(210, 180, 140, 0.1); border-left: 5px solid #D2B48C; border-radius: 5px;">
+        <p style="margin: 0; color: #5d5750; font-size: 0.9rem;">
+            <strong>Note:</strong> Database connection is currently inactive. Metrics are currently shown as zero.
+        </p>
+    </div>
+</div>
