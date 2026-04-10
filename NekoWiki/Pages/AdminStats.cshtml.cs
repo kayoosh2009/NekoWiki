@@ -6,9 +6,9 @@ namespace NekoWiki.Pages
     public class AdminStatsModel : PageModel
     {
         // Убедись, что здесь нет дубликатов!
-        public int TotalVisits { get; set; } = 0;
-        public int UserLogins { get; set; } = 0;
-        public int OnlineNow { get; set; } = 0; // Должна быть только одна такая строка
+        public int TotalVisits { get; set; } = 558;
+        public int UserLogins { get; set; } = 2;
+        public int OnlineNow { get; set; } = 1; 
 
         public IActionResult OnGet()
         {

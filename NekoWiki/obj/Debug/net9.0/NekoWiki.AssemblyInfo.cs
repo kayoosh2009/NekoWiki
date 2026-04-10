@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NekoWiki")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06d0b87a3157eb6c3ba7b836a8b8ecb444e6ac53")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca7a08471ad7c69354d71873a1a1efc094bd8dbe")]
 [assembly: System.Reflection.AssemblyProductAttribute("NekoWiki")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NekoWiki")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
