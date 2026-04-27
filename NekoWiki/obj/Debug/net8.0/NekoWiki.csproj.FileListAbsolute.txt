@@ -65,3 +65,34 @@ D:/User/Desktop/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/ref/NekoWiki.dll
 /workspaces/NekoWiki/NekoWiki/obj/Debug/net8.0/swae.build.ex.cache
 /workspaces/NekoWiki/NekoWiki/obj/Debug/net8.0/NekoWiki.genruntimeconfig.cache
 /workspaces/NekoWiki/NekoWiki/obj/Debug/net8.0/ref/NekoWiki.dll
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/bin/Debug/net8.0/appsettings.Development.json
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/bin/Debug/net8.0/appsettings.json
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/bin/Debug/net8.0/NekoWiki.staticwebassets.runtime.json
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/bin/Debug/net8.0/NekoWiki
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/bin/Debug/net8.0/NekoWiki.deps.json
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/bin/Debug/net8.0/NekoWiki.runtimeconfig.json
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/bin/Debug/net8.0/NekoWiki.dll
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/bin/Debug/net8.0/NekoWiki.pdb
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/NekoWiki.GeneratedMSBuildEditorConfig.editorconfig
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/NekoWiki.AssemblyInfoInputs.cache
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/NekoWiki.AssemblyInfo.cs
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/NekoWiki.csproj.CoreCompileInputs.cache
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/NekoWiki.MvcApplicationPartsAssemblyInfo.cache
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/NekoWiki.RazorAssemblyInfo.cache
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/NekoWiki.RazorAssemblyInfo.cs
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/NekoWiki.sourcelink.json
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/staticwebassets.build.json
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/staticwebassets.development.json
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/staticwebassets/msbuild.NekoWiki.Microsoft.AspNetCore.StaticWebAssets.props
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/staticwebassets/msbuild.build.NekoWiki.props
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.NekoWiki.props
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.NekoWiki.props
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/staticwebassets.pack.json
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/scopedcss/Pages/Shared/_Layout.cshtml.rz.scp.css
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/scopedcss/bundle/NekoWiki.styles.css
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/scopedcss/projectbundle/NekoWiki.bundle.scp.css
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/NekoWiki.dll
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/refint/NekoWiki.dll
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/NekoWiki.pdb
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/NekoWiki.genruntimeconfig.cache
+/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/ref/NekoWiki.dll
