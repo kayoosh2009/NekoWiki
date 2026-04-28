@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using NekoWiki.Models;
-
 namespace NekoWiki.Data;
 
 public class ApplicationDbContext : DbContext
@@ -10,5 +9,5 @@ public class ApplicationDbContext : DbContext
     {
     }
 
-    public DbSet<User> Users => Set<User>();
+    public DbSet<User> Users { get; set; }
 }

@@ -191,11 +191,11 @@
             <p class="neko-subtitle">Create your neko-account!</p>
         </div>
 
-        <form id="registerForm" novalidate>
+        <form id="registerForm" method="post" novalidate>
             <div class="form-group">
                 <label class="form-label" for="inputLogin">Login</label>
                 <div class="input-wrapper">
-                    <input type="text" class="form-control" id="inputLogin" placeholder="NekoWarrior77">
+                    <input asp-for="NewUser.Login" type="text" class="form-control" id="inputLogin" placeholder="NekoWarrior77">
                 </div>
                 <div id="loginHelp" class="error-message"></div>
             </div>
@@ -203,7 +203,7 @@
             <div class="form-row">
                 <div class="form-group">
                     <label class="form-label" for="inputEmail">Email address</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="meow@mail.com">
+                    <input asp-for="NewUser.Email" type="email" class="form-control" id="inputEmail" placeholder="meow@mail.com">
                     <div id="emailHelp" class="error-message"></div>
                 </div>
                 <div class="form-group">
@@ -217,7 +217,7 @@
                 <div class="form-group">
                     <label class="form-label" for="inputPassword">Password</label>
                     <div class="input-wrapper">
-                        <input type="password" class="form-control input-password" id="inputPassword" placeholder="••••••••">
+                        <input asp-for="NewUser.Password" type="password" class="form-control input-password" id="inputPassword" placeholder="••••••••">
                         <span id="togglePass" class="password-toggle"></span>
                     </div>
                     <div id="passwordHelp" class="error-message"></div>
@@ -235,12 +235,12 @@
             <div class="form-row">
                 <div class="form-group">
                     <label class="form-label" for="inputDOB">Born Date</label>
-                    <input type="date" class="form-control" id="inputDOB">
+                    <input asp-for="NewUser.BornDate" type="date" class="form-control" id="inputDOB">
                     <div id="dobHelp" class="error-message"></div>
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="favCats">What cats do you like?</label>
-                    <input type="text" class="form-control" id="favCats" placeholder="Maine Coon...">
+                    <input asp-for="NewUser.FavoriteCats" type="text" class="form-control" id="favCats" placeholder="Maine Coon...">
                     <div id="favCatsHelp" class="error-message"></div>
                 </div>
             </div>
@@ -249,11 +249,11 @@
                 <label class="form-label">Do you love cats?</label>
                 <div class="radio-group">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="catLover" id="catLoverYes" value="Yes">
+                        <input asp-for="NewUser.CatLover" class="form-check-input" type="radio" id="catLoverYes" value="Yes">
                         <label class="form-check-label" for="catLoverYes">Meow (Yes)</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="catLover" id="catLoverNo" value="No">
+                        <input asp-for="NewUser.CatLover" class="form-check-input" type="radio" id="catLoverNo" value="No">
                         <label class="form-check-label" for="catLoverNo">No</label>
                     </div>
                 </div>
