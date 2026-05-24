@@ -191,11 +191,18 @@
             <p class="neko-subtitle">Create your neko-account!</p>
         </div>
 
-        <form id="registerForm" novalidate>
+            @if (!string.IsNullOrEmpty(Model.Message))
+            {
+                <div class="alert alert-danger p-2 text-center" style="font-size: 0.9rem; color: #e63946; font-weight: bold;">
+                    @Model.Message
+                </div>
+            }
+            <form id="registerForm" method="post">
+
             <div class="form-group">
                 <label class="form-label" for="inputLogin">Login</label>
                 <div class="input-wrapper">
-                    <input type="text" class="form-control" id="inputLogin" placeholder="NekoWarrior77">
+                    <input type="text" asp-for="Username" class="form-control" id="inputLogin" placeholder="NekoWarrior77" required>
                 </div>
                 <div id="loginHelp" class="error-message"></div>
             </div>
@@ -208,7 +215,7 @@
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="confirmEmail">Confirm Email</label>
-                    <input type="email" class="form-control" id="confirmEmail" placeholder="meow@mail.com">
+                    <input type="email" asp-for="Email" class="form-control" id="inputEmail" placeholder="meow@mail.com" required>
                     <div id="confirmEmailHelp" class="error-message"></div>
                 </div>
             </div>
@@ -217,7 +224,7 @@
                 <div class="form-group">
                     <label class="form-label" for="inputPassword">Password</label>
                     <div class="input-wrapper">
-                        <input type="password" class="form-control input-password" id="inputPassword" placeholder="••••••••">
+                            <input type="password" asp-for="Password" class="form-control input-password" id="inputPassword" placeholder="••••••••" required>
                         <span id="togglePass" class="password-toggle"></span>
                     </div>
                     <div id="passwordHelp" class="error-message"></div>
@@ -235,12 +242,12 @@
             <div class="form-row">
                 <div class="form-group">
                     <label class="form-label" for="inputDOB">Born Date</label>
-                    <input type="date" class="form-control" id="inputDOB">
+                        <input type="date" asp-for="BornDate" class="form-control" id="inputDOB">
                     <div id="dobHelp" class="error-message"></div>
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="favCats">What cats do you like?</label>
-                    <input type="text" class="form-control" id="favCats" placeholder="Maine Coon...">
+                        <input type="text" asp-for="FavCats" class="form-control" id="favCats" placeholder="Maine Coon...">
                     <div id="favCatsHelp" class="error-message"></div>
                 </div>
             </div>
@@ -248,14 +255,14 @@
             <div class="form-group">
                 <label class="form-label">Do you love cats?</label>
                 <div class="radio-group">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="catLover" id="catLoverYes" value="Yes">
-                        <label class="form-check-label" for="catLoverYes">Meow (Yes)</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="catLover" id="catLoverNo" value="No">
-                        <label class="form-check-label" for="catLoverNo">No</label>
-                    </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" asp-for="LovesCats" id="catLoverYes" value="Yes" checked>
+                            <label class="form-check-label" for="catLoverYes">Meow (Yes)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" asp-for="LovesCats" id="catLoverNo" value="No">
+                            <label class="form-check-label" for="catLoverNo">No</label>
+                        </div>
                 </div>
                 <div id="catHelp" class="error-message"></div>
             </div>

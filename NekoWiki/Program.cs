@@ -1,4 +1,4 @@
-using Microsoft.Extensions.Options;
+﻿using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -40,5 +40,31 @@ app.UseAuthorization();
 app.UseSession();
 
 app.MapRazorPages();
+
+using (var scope = app.Services.CreateScope())
+{
+    using (var db = new NekoWiki.Models.AppDbContext())
+    {
+        // Сама создаст файл nekowiki.db, если его еще нет
+        db.Database.EnsureCreated();
+
+        // Создаем админа при самом первом старте
+        if (!db.Users.Any())
+        {
+            var hasher = new Microsoft.AspNetCore.Identity.PasswordHasher<string>();
+            db.Users.Add(new NekoWiki.Models.User
+            {
+                Username = "admin",
+                Email = "admin@nekowiki.com",
+                PasswordHash = hasher.HashPassword("admin", "admin123"),
+                BornDate = DateTime.Now,
+                FavCats = "All",
+                LovesCats = "Yes",
+                IsAdmin = true
+            });
+            db.SaveChanges();
+        }
+    }
+}
 
 app.Run();
