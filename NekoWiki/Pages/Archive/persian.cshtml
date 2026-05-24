@@ -1,0 +1,57 @@
+﻿@page
+@model NekoWiki.Pages.Archive.persianModel
+@{
+    <style>
+        body {
+            background-image: url('/img/background.png');
+            background-size: 100% auto;
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-position: center top;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content-block::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+
+    <div class="container-flex">
+        <div class="content-block" style="max-width: 900px;
+                                     margin: 20px auto;
+                                     padding: 20px;
+                                     border: 1px solid #ccc;
+                                     overflow: auto;
+                                     background-color: rgba(255, 255, 255, 0.85);
+                                     border-radius: 10px;
+                                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+
+            <img src="~/img/cats/persian.png" alt="persian"
+                 style="float: right;
+                            margin-left: 20px;
+                            margin-bottom: 10px;
+                            width: 300px;
+                            height: 300px;
+                            object-fit: cover;
+                            border-radius: 8px;">
+
+            <h1>Persian Cat</h1>
+            <p>The Persian cat is one of the oldest and most recognized cat breeds, famous for its long, flowing coat, short face, and sweet, docile expression. They are known for their quiet and gentle temperament, making them perfect indoor pets.</p>
+
+            <h2>Origin:</h2>
+            <p>The breed is believed to have originated in Persia (modern-day Iran) and Turkey. Longhaired cats were first brought to Europe in the 17th century by Italian travelers. Through selective breeding, the breed developed its characteristic round head, small ears, and flat facial features.</p>
+
+            <h2>Character and features</h2>
+            <ul>
+                <li>Size: Medium to large, with a cobby body and short, thick legs. Weight typically ranges from 3–5.5 kg.</li>
+                <li>Coat: Extremely long, thick, and dense, requiring daily grooming to prevent matting. They possess a large ruff around the neck.</li>
+                <li>Temperament: Generally placid, quiet, and low-energy. They prefer relaxing in a comfortable environment and are not overly demanding. Their meow is soft and infrequent.</li>
+                <li>Distinguishing Traits: Large, round eyes, a short, flat "peke-face" (Peke-faced Persian) or traditional "doll-face," and a broad head.</li>
+            </ul>
+
+        </div>
+    </div>
+}

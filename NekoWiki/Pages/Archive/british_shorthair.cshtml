@@ -1,0 +1,57 @@
+﻿@page
+@model NekoWiki.Pages.Archive.british_shorthairModel
+@{
+    <style>
+        body {
+            background-image: url('/img/background.png');
+            background-size: 100% auto;
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-position: center top;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content-block::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+
+    <div class="container-flex">
+        <div class="content-block" style="max-width: 900px;
+                                     margin: 20px auto;
+                                     padding: 20px;
+                                     border: 1px solid #ccc;
+                                     overflow: auto;
+                                     background-color: rgba(255, 255, 255, 0.85);
+                                     border-radius: 10px;
+                                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+
+            <img src="~/img/cats/british_shorthair.png" alt="british_shorthair"
+                 style="float: right;
+                            margin-left: 20px;
+                            margin-bottom: 10px;
+                            width: 300px;
+                            height: 300px;
+                            object-fit: cover;
+                            border-radius: 8px;">
+
+            <h1>British Shorthair</h1>
+            <p>The British Shorthair is one of the most popular breeds, known for its massive build, round head, and thick, "plush" coat. Due to their calm and independent nature, they are often considered ideal companions.</p>
+
+            <h2>Origin:</h2>
+            <p>The breed originates from Great Britain. These cats are believed to be descendants of domestic cats brought by the Romans and were later crossed with Persians to enhance coat density and body massiveness. The breed received official recognition in the early 20th century.</p>
+
+            <h2>Character and features</h2>
+            <ul>
+                <li>Size: Medium to large. Distinguished by a sturdy, "cobby" build. Males can weigh up to 5–8 kg.</li>
+                <li>Coat: Short, very dense, and plush, standing away from the body.</li>
+                <li>Temperament: Calm, composed, and independent. They are undemanding and handle solitude well. They are often called "cats for busy people."</li>
+                <li>Distinguishing Traits: A round head, powerful cheeks, a short, thick tail, and large, round eyes, often gold or copper colored.</li>
+            </ul>
+
+        </div>
+    </div>
+}
