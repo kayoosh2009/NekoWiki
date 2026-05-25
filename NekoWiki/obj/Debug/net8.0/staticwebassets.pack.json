@@ -1,0 +1,321 @@
+{
+  "Files": [
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/obj/Debug/net8.0/scopedcss/projectbundle/NekoWiki.bundle.scp.css",
+      "PackagePath": "staticwebassets/NekoWiki.bundle.scp.css"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/background.png",
+      "PackagePath": "staticwebassets/img/background.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/cat1.jpg",
+      "PackagePath": "staticwebassets/img/cat1.jpg"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/cats/bengal.png",
+      "PackagePath": "staticwebassets/img/cats/bengal.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/cats/british_shorthair.png",
+      "PackagePath": "staticwebassets/img/cats/british_shorthair.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/cats/maine_coon.png",
+      "PackagePath": "staticwebassets/img/cats/maine_coon.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/cats/persian.png",
+      "PackagePath": "staticwebassets/img/cats/persian.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/cats/ragdoll.png",
+      "PackagePath": "staticwebassets/img/cats/ragdoll.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/cats/siamese.png",
+      "PackagePath": "staticwebassets/img/cats/siamese.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/creator.png",
+      "PackagePath": "staticwebassets/img/creator.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/logo.png",
+      "PackagePath": "staticwebassets/img/logo.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/main/1.png",
+      "PackagePath": "staticwebassets/img/main/1.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/main/10.png",
+      "PackagePath": "staticwebassets/img/main/10.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/main/11.png",
+      "PackagePath": "staticwebassets/img/main/11.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/main/12.png",
+      "PackagePath": "staticwebassets/img/main/12.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/main/13.png",
+      "PackagePath": "staticwebassets/img/main/13.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/main/14.png",
+      "PackagePath": "staticwebassets/img/main/14.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/main/15.png",
+      "PackagePath": "staticwebassets/img/main/15.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/main/2.png",
+      "PackagePath": "staticwebassets/img/main/2.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/main/3.png",
+      "PackagePath": "staticwebassets/img/main/3.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/main/4.png",
+      "PackagePath": "staticwebassets/img/main/4.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/main/5.png",
+      "PackagePath": "staticwebassets/img/main/5.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/main/6.png",
+      "PackagePath": "staticwebassets/img/main/6.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/main/7.png",
+      "PackagePath": "staticwebassets/img/main/7.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/main/8.png",
+      "PackagePath": "staticwebassets/img/main/8.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/img/main/9.png",
+      "PackagePath": "staticwebassets/img/main/9.png"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/js/Login.js",
+      "PackagePath": "staticwebassets/js/Login.js"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/js/register.js",
+      "PackagePath": "staticwebassets/js/register.js"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/home/kayoosh/Рабочий стол/Code/NekoWiki/NekoWiki/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.NekoWiki.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.NekoWiki.props",
+      "PackagePath": "build\\NekoWiki.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.NekoWiki.props",
+      "PackagePath": "buildMultiTargeting\\NekoWiki.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.NekoWiki.props",
+      "PackagePath": "buildTransitive\\NekoWiki.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

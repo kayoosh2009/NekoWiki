@@ -22,7 +22,12 @@ namespace NekoWiki.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=nekowiki.db");
+            // Находим путь к папке, где запущен сам проект
+            string baseDirectory = AppContext.BaseDirectory;
+            string dbPath = Path.Combine(baseDirectory, "nekowiki.db");
+
+            // Подключаем базу по абсолютному, надежному пути
+            optionsBuilder.UseSqlite($"Data Source={dbPath}");
         }
     }
 }
