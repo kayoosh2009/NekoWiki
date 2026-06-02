@@ -25,7 +25,7 @@ namespace NekoWiki.Pages
 
             using (var db = new AppDbContext())
             {
-                var user = db.Users.FirstOrDefault(u => u.Username == Username);
+                var user = db.Users.FirstOrDefault(u => u.Username.ToLower() == Username.ToLower());
                 if (user != null)
                 {
                     var hasher = new PasswordHasher<string>();

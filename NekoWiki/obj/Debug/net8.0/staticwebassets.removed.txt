@@ -1,0 +1,12 @@
+D:\User\Desktop\Code\NekoWiki\NekoWiki\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+D:\User\Desktop\Code\NekoWiki\NekoWiki\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+D:\User\Desktop\Code\NekoWiki\NekoWiki\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+D:\User\Desktop\Code\NekoWiki\NekoWiki\wwwroot\lib\jquery-validation\dist\additional-methods.js
+D:\User\Desktop\Code\NekoWiki\NekoWiki\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+D:\User\Desktop\Code\NekoWiki\NekoWiki\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+D:\User\Desktop\Code\NekoWiki\NekoWiki\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+D:\User\Desktop\Code\NekoWiki\NekoWiki\wwwroot\lib\jquery-validation\LICENSE.md
+D:\User\Desktop\Code\NekoWiki\NekoWiki\wwwroot\lib\jquery\dist\jquery.js
+D:\User\Desktop\Code\NekoWiki\NekoWiki\wwwroot\lib\jquery\dist\jquery.min.js
+D:\User\Desktop\Code\NekoWiki\NekoWiki\wwwroot\lib\jquery\dist\jquery.min.map
+D:\User\Desktop\Code\NekoWiki\NekoWiki\wwwroot\lib\jquery\LICENSE.txt

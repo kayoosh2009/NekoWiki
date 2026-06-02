@@ -11,10 +11,10 @@
             <p class="neko-subtitle">Welcome back, nya!</p>
         </div>
 
-        <form method="post"> @* Важно добавить method="post" *@
+        <form id="loginForm" method="post">
             <div class="form-group">
-                <label class="form-label">Username</label> @* В задании просят Username, а не Email *@
-                <input asp-for="Username" class="form-control" placeholder="admin / user1">
+                <label class="form-label">Username</label>
+                <input id="inputUsername" asp-for="Username" class="form-control" placeholder="admin / user1">
                 <span asp-validation-for="Username" class="text-danger"></span>
             </div>
 
