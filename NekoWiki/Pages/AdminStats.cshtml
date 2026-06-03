@@ -3,7 +3,6 @@
 @{
     ViewData["Title"] = "Site Statistics";
 }
-
 <style>
     body {
         background-image: url('/img/background.png');
@@ -14,9 +13,141 @@
         margin: 0;
         padding: 0;
     }
+
+    .admin-wrap {
+        max-width: 1100px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    /* --- Таблица пользователей --- */
+    .users-section { margin-top: 40px; }
+
+    .users-section h2 {
+        color: #333;
+        margin-bottom: 15px;
+        font-size: 1.4rem;
+    }
+
+    .table-controls {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        align-items: center;
+    }
+
+    .table-controls input[type="text"] {
+        flex: 1;
+        min-width: 200px;
+        padding: 8px 14px;
+        border: 1px solid #D2B48C;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        outline: none;
+        transition: border-color 0.2s;
+    }
+
+    .table-controls input[type="text"]:focus {
+        border-color: #a0825a;
+    }
+
+    .table-controls select {
+        padding: 8px 12px;
+        border: 1px solid #D2B48C;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        background: white;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .users-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.92rem;
+    }
+
+    .users-table thead tr {
+        background-color: #D2B48C;
+        color: white;
+    }
+
+    .users-table thead th {
+        padding: 12px 14px;
+        text-align: left;
+        cursor: pointer;
+        user-select: none;
+        white-space: nowrap;
+    }
+
+    .users-table thead th:hover { background-color: #b89870; }
+
+    .users-table thead th .sort-icon {
+        margin-left: 5px;
+        font-size: 0.75rem;
+        opacity: 0.7;
+    }
+
+    .users-table thead th.active-sort .sort-icon { opacity: 1; }
+
+    .users-table tbody tr {
+        border-bottom: 1px solid #eee;
+        transition: background 0.15s;
+    }
+
+    .users-table tbody tr:hover { background-color: rgba(210,180,140,0.12); }
+
+    .users-table td {
+        padding: 10px 14px;
+        color: #444;
+        vertical-align: middle;
+    }
+
+    .badge-admin {
+        display: inline-block;
+        padding: 2px 10px;
+        background: #D2B48C;
+        color: white;
+        border-radius: 20px;
+        font-size: 0.78rem;
+        font-weight: 600;
+    }
+
+    .badge-user {
+        display: inline-block;
+        padding: 2px 10px;
+        background: #e0e0e0;
+        color: #555;
+        border-radius: 20px;
+        font-size: 0.78rem;
+    }
+
+    .highlight {
+        background-color: #fff3cd;
+        border-radius: 3px;
+        padding: 0 2px;
+    }
+
+    #noResults {
+        text-align: center;
+        padding: 20px;
+        color: #999;
+        display: none;
+    }
+
+    .table-info {
+        margin-top: 8px;
+        font-size: 0.85rem;
+        color: #888;
+    }
 </style>
 
-<div style="max-width: 850px; margin: 20px auto; padding: 20px; background-color: rgba(255, 255, 255, 0.85); border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+<div class="admin-wrap">
+    <!-- Заголовок -->
     <div style="text-align: center; margin-bottom: 30px;">
         <h1 style="color: #333; margin: 0;">
             <i class="bi bi-graph-up"></i> Site Analytics 📊
@@ -24,34 +155,196 @@
         <p style="color: #666;">Usage metrics and traffic monitoring</p>
     </div>
 
+    <!-- Карточки статистики -->
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-        
         <div style="background: white; padding: 25px; border-radius: 15px; text-align: center; border: 1px solid #eee; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
             <i class="bi bi-people" style="font-size: 2rem; color: #D2B48C;"></i>
             <h4 style="margin: 10px 0; font-size: 1rem; color: #555;">Total Visits</h4>
             <div style="font-size: 2.5rem; font-weight: bold; color: #333;">@Model.TotalVisits</div>
             <small style="color: #999;">Guests + Users</small>
         </div>
-
         <div style="background: white; padding: 25px; border-radius: 15px; text-align: center; border: 1px solid #eee; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
             <i class="bi bi-person-check" style="font-size: 2rem; color: #28a745;"></i>
             <h4 style="margin: 10px 0; font-size: 1rem; color: #555;">User Logins</h4>
             <div style="font-size: 2.5rem; font-weight: bold; color: #333;">@Model.UserLogins</div>
             <small style="color: #999;">Registered only</small>
         </div>
-
         <div style="background: white; padding: 25px; border-radius: 15px; text-align: center; border: 1px solid #eee; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
             <i class="bi bi-broadcast" style="font-size: 2rem; color: #ffc107;"></i>
             <h4 style="margin: 10px 0; font-size: 1rem; color: #555;">Online Now</h4>
             <div style="font-size: 2.5rem; font-weight: bold; color: #333;">@Model.OnlineNow</div>
             <small style="color: #999;">Active sessions</small>
         </div>
-
+        <div style="background: white; padding: 25px; border-radius: 15px; text-align: center; border: 1px solid #eee; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <i class="bi bi-person-lines-fill" style="font-size: 2rem; color: #6c757d;"></i>
+            <h4 style="margin: 10px 0; font-size: 1rem; color: #555;">Total Users</h4>
+            <div style="font-size: 2.5rem; font-weight: bold; color: #333;">@Model.Users.Count</div>
+            <small style="color: #999;">In database</small>
+        </div>
     </div>
 
-    <div style="margin-top: 30px; padding: 15px; background-color: rgba(210, 180, 140, 0.1); border-left: 5px solid #D2B48C; border-radius: 5px;">
+    <div style="margin-top: 20px; padding: 15px; background-color: rgba(210, 180, 140, 0.1); border-left: 5px solid #D2B48C; border-radius: 5px;">
         <p style="margin: 0; color: #5d5750; font-size: 0.9rem;">
-            <strong>Note:</strong> Database connection is currently inactive. Metrics are currently shown as zero.
+            <strong>Note:</strong> Visit metrics are approximate. User table is loaded from the database.
         </p>
     </div>
+
+    <!-- Таблица пользователей -->
+    <div class="users-section">
+        <h2><i class="bi bi-people-fill"></i> All Users 🐾</h2>
+
+        <div class="table-controls">
+            <input type="text" id="searchInput" placeholder="🔍 Search by name, email, ID..." oninput="filterAndSort()" />
+            <select id="sortField" onchange="filterAndSort()">
+                <option value="id">Sort: ID</option>
+                <option value="username">Sort: Username</option>
+                <option value="email">Sort: Email</option>
+                <option value="borndate">Sort: Birth Date</option>
+                <option value="role">Sort: Role</option>
+            </select>
+            <select id="sortDir" onchange="filterAndSort()">
+                <option value="asc">↑ Ascending</option>
+                <option value="desc">↓ Descending</option>
+            </select>
+        </div>
+
+        <table class="users-table" id="usersTable">
+            <thead>
+                <tr>
+                    <th onclick="setSortField('id')" id="th-id">ID <span class="sort-icon">⇅</span></th>
+                    <th onclick="setSortField('username')" id="th-username">Username <span class="sort-icon">⇅</span></th>
+                    <th onclick="setSortField('email')" id="th-email">Email <span class="sort-icon">⇅</span></th>
+                    <th onclick="setSortField('borndate')" id="th-borndate">Birth Date <span class="sort-icon">⇅</span></th>
+                    <th>Fav Cats</th>
+                    <th>Loves Cats</th>
+                    <th onclick="setSortField('role')" id="th-role">Role <span class="sort-icon">⇅</span></th>
+                </tr>
+            </thead>
+            <tbody id="usersBody">
+                @foreach (var user in Model.Users)
+                {
+                    <tr
+                        data-id="@user.Id"
+                        data-username="@user.Username.ToLower()"
+                        data-email="@user.Email.ToLower()"
+                        data-borndate="@user.BornDate.ToString("yyyy-MM-dd")"
+                        data-role="@(user.IsAdmin ? "admin" : "user")">
+                        <td>@user.Id</td>
+                        <td><strong>@user.Username</strong></td>
+                        <td>@user.Email</td>
+                        <td>@user.BornDate.ToString("dd.MM.yyyy")</td>
+                        <td>@user.FavCats</td>
+                        <td>@user.LovesCats</td>
+                        <td>
+                            @if (user.IsAdmin)
+                            {
+                                <span class="badge-admin">👑 Admin</span>
+                            }
+                            else
+                            {
+                                <span class="badge-user">User</span>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div id="noResults">😿 No users found matching your search.</div>
+        <div class="table-info" id="tableInfo"></div>
+    </div>
 </div>
+
+<script>
+    let currentSort = { field: 'id', dir: 'asc' };
+
+    function setSortField(field) {
+        if (currentSort.field === field) {
+            currentSort.dir = currentSort.dir === 'asc' ? 'desc' : 'asc';
+        } else {
+            currentSort.field = field;
+            currentSort.dir = 'asc';
+        }
+        document.getElementById('sortField').value = field;
+        document.getElementById('sortDir').value = currentSort.dir;
+        filterAndSort();
+    }
+
+    function filterAndSort() {
+        const search = document.getElementById('searchInput').value.trim().toLowerCase();
+        const field = document.getElementById('sortField').value;
+        const dir = document.getElementById('sortDir').value;
+        currentSort = { field, dir };
+
+        const tbody = document.getElementById('usersBody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+
+        // Фильтрация
+        let visible = rows.filter(row => {
+            if (!search) return true;
+            const id = row.dataset.id;
+            const username = row.dataset.username;
+            const email = row.dataset.email;
+            return id.includes(search) || username.includes(search) || email.includes(search);
+        });
+
+        // Подсветка совпадений
+        rows.forEach(row => {
+            row.style.display = visible.includes(row) ? '' : 'none';
+            // Сброс подсветки
+            row.querySelectorAll('td').forEach(td => {
+                td.innerHTML = td.innerHTML.replace(/<mark class="highlight">|<\/mark>/g, '');
+            });
+        });
+
+        if (search) {
+            visible.forEach(row => {
+                [1, 2].forEach(idx => { // Username и Email
+                    const td = row.querySelectorAll('td')[idx];
+                    if (td) {
+                        const text = td.textContent;
+                        const regex = new RegExp(`(${search.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+                        td.innerHTML = text.replace(regex, '<mark class="highlight">$1</mark>');
+                    }
+                });
+            });
+        }
+
+        // Сортировка
+        visible.sort((a, b) => {
+            let valA = a.dataset[field] || '';
+            let valB = b.dataset[field] || '';
+
+            if (field === 'id') {
+                valA = parseInt(valA); valB = parseInt(valB);
+                return dir === 'asc' ? valA - valB : valB - valA;
+            }
+
+            return dir === 'asc'
+                ? valA.localeCompare(valB)
+                : valB.localeCompare(valA);
+        });
+
+        // Перестройка таблицы
+        visible.forEach(row => tbody.appendChild(row));
+
+        // Обновить заголовки
+        document.querySelectorAll('.users-table thead th').forEach(th => th.classList.remove('active-sort'));
+        const activeTh = document.getElementById('th-' + field);
+        if (activeTh) {
+            activeTh.classList.add('active-sort');
+            activeTh.querySelector('.sort-icon').textContent = dir === 'asc' ? '↑' : '↓';
+        }
+
+        // Счётчик
+        const noResults = document.getElementById('noResults');
+        const tableInfo = document.getElementById('tableInfo');
+        noResults.style.display = visible.length === 0 ? 'block' : 'none';
+        tableInfo.textContent = visible.length > 0
+            ? `Showing ${visible.length} of ${rows.length} users`
+            : '';
+    }
+
+    // Инициализация
+    filterAndSort();
+</script>
