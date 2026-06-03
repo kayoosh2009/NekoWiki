@@ -161,13 +161,8 @@
 
             if (isValid) {
                 submitBtn.disabled = true;
-                const originalText = submitBtn.innerHTML;
                 submitBtn.innerHTML = 'Creating account... 🐾';
-
-                setTimeout(() => {
-                    alert("Meow! Registration successful.");
-                    window.location.href = '/Login';
-                }, 1500);
+                form.submit(); // ← вот так — реальная отправка в C#
             }
         });
     }
